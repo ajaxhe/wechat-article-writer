@@ -250,3 +250,12 @@
 - `git status --porcelain` 输出 1 个改动文件：`.workbuddy/memory/automations/automation-1782042173057/memory.md`（本自动化的记忆文件自身被追踪为已修改）。
 - 已执行 `git add -A` → `git commit` → `git push origin main`，提交并推送 1 个文件（commit e4226f9，3d9fa5b..e4226f9，6 行插入）。
 - 结论：本次仅该记忆文件有改动，提交后仓库恢复干净。
+
+## 2026-10-25
+- 检查目录 `wechat-article-writer` 的 Git 状态。
+- `git status --porcelain` 输出 3 个改动文件：
+  1. `.workbuddy/memory/automations/automation-1782042173057/memory.md`（本自动化的记忆文件自身被追踪为已修改，M）
+  2. `SKILL.md`（被追踪为已修改，M）
+  3. `references/report-reading-style.md`（新增未追踪文件，??）
+- 已执行 `git add -A` → `git commit` → `git push origin main`，提交并推送 3 个文件（commit 1b82ed0，e4226f9..1b82ed0，252 行插入、2 行删除），含新建 `references/report-reading-style.md`。
+- 结论：本次除记忆文件外，还含 SKILL.md 修改及新增报告解读风格参考文档，提交后仓库恢复干净。
